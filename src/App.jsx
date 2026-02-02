@@ -9,7 +9,7 @@ export const App = () => {
 
   const filteredQuery = query.toLowerCase().trim();
 
-  const filteredMovies = moviesFromServer.filter(
+  const visibleMovies = moviesFromServer.filter(
     item =>
       item.title.toLowerCase().includes(filteredQuery) ||
       item.description.toLowerCase().includes(filteredQuery),
